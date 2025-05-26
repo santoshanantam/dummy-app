@@ -26,6 +26,9 @@ jobs:
           # Update version using jq and overwrite file
           jq --arg v "$NEW_VERSION" '.expo.version = $v' app.json > tmp.json && mv tmp.json app.json
 
+          # ✅ Export version for use in next step
+          echo "NEW_VERSION=$NEW_VERSION" >> $GITHUB_ENV
+
       - name: Commit and push changes
         env:
           PAT: ${{ secrets.ACTIONS_PAT }}
