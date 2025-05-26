@@ -1,3 +1,3 @@
 # dummy-app
 
-testing3
+testing
