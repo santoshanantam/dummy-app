@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "vahanbazar",
+    "slug": "vahanbazar",
+    "version": "1.0.9",
+    "orientation": "portrait",
+    "icon": "./assets/vb-logo.png",
+    "scheme": "vahanbazar",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/vb-logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "app.vahanbazar"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/vb-logo.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "app.vahanbazar"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/vb-logo.png"
+    },
+    "plugins": ["expo-router", "expo-font", "expo-secure-store"],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "5300b8d6-e3d9-465c-aed2-8e0e30b5cafa"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "owner": "vahanbazar"
+  }
+}
