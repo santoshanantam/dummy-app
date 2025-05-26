@@ -34,4 +34,5 @@ jobs:
           git config user.email "github-actions@github.com"
           git add app.json
           git commit -m "chore: bump app version to ${NEW_VERSION} [skip ci]" || echo "No changes to commit"
+          git remote set-url origin https://x-access-token:${PAT}@github.com/${{ github.repository }}
           git push
