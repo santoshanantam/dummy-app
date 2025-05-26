@@ -27,6 +27,8 @@ jobs:
           jq --arg v "$NEW_VERSION" '.expo.version = $v' app.json > tmp.json && mv tmp.json app.json
 
       - name: Commit and push changes
+        env:
+          PAT: ${{ secrets.ACTIONS_PAT }}
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
