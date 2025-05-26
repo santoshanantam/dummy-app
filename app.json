@@ -2,7 +2,7 @@
   "expo": {
     "name": "vahanbazar",
     "slug": "vahanbazar",
-    "version": "1.0.12",
+    "version": "1.0.13",
     "orientation": "portrait",
     "icon": "./assets/vb-logo.png",
     "scheme": "vahanbazar",
